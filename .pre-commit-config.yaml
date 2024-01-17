@@ -1,15 +1,13 @@
 repos:
-
-  - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.62.3
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: v0.1.12 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
     hooks:
-      - id: terraform_fmt
-      - id: terraform_validate
+      - id: terraform-fmt
+      - id: shellcheck
 
-  - repo: git://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0 # Use the ref you want to point at
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1 # Use the ref you want to point at
     hooks:
-      - id: end-of-file-fixer
       - id: trailing-whitespace
       - id: mixed-line-ending
       - id: check-byte-order-marker
@@ -18,5 +16,9 @@ repos:
       - id: debug-statements
       - id: check-yaml
       - id: check-added-large-files
-      - id: detect-aws-credentials
-      - id: double-quote-string-fixer
+
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: "v0.16.0"
+    hooks:
+      - id: terraform-docs-go
+        args: ["markdown", "table", "--output-file", "README.md", "./"]

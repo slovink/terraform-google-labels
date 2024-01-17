@@ -1,5 +1,3 @@
-#Module      : LABEL
-#Description : Terraform label module variables.
 variable "name" {
   type        = string
   default     = ""
@@ -12,9 +10,15 @@ variable "environment" {
   description = "Environment (e.g. `prod`, `dev`, `staging`)."
 }
 
+variable "repository" {
+  type        = string
+  default     = "https://github.com/slovink/terraform-google-labels"
+  description = "Terraform current module repo"
+}
+
 variable "label_order" {
   type        = list(any)
-  default     = []
+  default     = ["name", "environment"]
   description = "Label order, e.g. sequence of application name and environment `name`,`environment`,'attribute' [`webserver`,`qa`,`devops`,`public`,] ."
 }
 
@@ -28,6 +32,12 @@ variable "extra_tags" {
   type        = map(string)
   default     = {}
   description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
+}
+
+variable "managedby" {
+  type        = string
+  default     = "slovink"
+  description = "ManagedBy, eg 'slovink'."
 }
 
 variable "enabled" {

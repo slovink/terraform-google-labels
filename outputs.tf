@@ -12,6 +12,11 @@ output "name" {
   description = "Normalized name."
 }
 
+output "repository" {
+  value       = local.repository
+  description = "Terraform current module repo"
+}
+
 output "environment" {
   value       = local.environment
   description = "Normalized environment"
