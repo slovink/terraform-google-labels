@@ -21,7 +21,7 @@ You can use this module in your Terraform configuration like this:
 ## Example: labels
 ```hcl
 module "labels" {
-  source      = "git::https://github.com/slovink/terraform-google-labels.git?ref=v1.0.1"
+  source      = "git::https://github.com/slovink/terraform-google-labels.git?ref=v1.0.2"
   name        = "app"
   environment = "test"
   label_order = ["name", "environment"]
