@@ -1,3 +1,37 @@
+<p align="center"> <img src="https://user-images.githubusercontent.com/50652676/62349836-882fef80-b51e-11e9-99e3-7b974309c7e3.png" width="100" height="100"></p>
+
+
+<h1 align="center">
+    Terraform google Labels
+</h1>
+
+<p align="center" style="font-size: 1.2rem;">
+    Terraform module to create labels resource on google.
+     </p>
+
+<p align="center">
+
+<a href="https://www.terraform.io">
+  <img src="https://img.shields.io/badge/Terraform-v1.7.4-green" alt="Terraform">
+</a>
+<a href="https://github.com/slovink/terraform-google-labels/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/License-APACHE-blue.svg" alt="Licence">
+</a>
+
+
+
+</p>
+<p align="center">
+
+<a href='https://www.facebook.com/Slovink.in=https://github.com/slovink/terraform-lables'>
+  <img title="Share on Facebook" src="https://user-images.githubusercontent.com/50652676/62817743-4f64cb80-bb59-11e9-90c7-b057252ded50.png" />
+</a>
+<a href='https://www.linkedin.com/company/101534993/admin/feed/posts/=https://github.com/slovink/terraform-lables'>
+  <img title="Share on LinkedIn" src="https://user-images.githubusercontent.com/50652676/62817742-4e339e80-bb59-11e9-87b9-a1f68cae1049.png" />
+</a>
+
+
+
 # Terraform-google-labels
 # Google Cloud Infrastructure Provisioning with Terraform
 
@@ -34,7 +68,7 @@ module "labels" {
 Please ensure you specify the correct 'source' path for the module.
 
 # Examples
-For detailed examples on how to use this module, please refer to the [Examples](https://github.com/slovink/terraform-google-labels/tree/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [Examples](https://github.com/slovink/terraform-google-labels/tree/master/example) directory within this repository.
 
 # License
 This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/slovink/terraform-google-labels/blob/master/LICENSE) file for more details.
