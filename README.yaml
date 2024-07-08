@@ -16,7 +16,7 @@ github_repo: git@github.com:slovink/terraform-google-labels.git
 # Badges to display
 badges:
   - name: "Terraform"
-    image: "https://img.shields.io/badge/Terraform-v1.7.4-green"
+    image: "https://img.shields.io/badge/Terraform-v1.9.1-green"
     url: "https://www.terraform.io"
   - name: "Licence"
     image: "https://img.shields.io/badge/License-APACHE-blue.svg"
@@ -47,7 +47,7 @@ usage : |-
       label_order = ["name", "environment"]
       attributes  = ["private"]
       extra_tags  = {
-         Application = "Demo"
+      Application = "Demo"
       }
   }
   ```
