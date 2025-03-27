@@ -1,4 +1,4 @@
-  module "labels" {
+module "labels" {
   source = "./../"
 
   name        = "app"
