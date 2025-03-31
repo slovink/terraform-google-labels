@@ -84,7 +84,7 @@ Replace **MIT** and **slovink** with the appropriate license and your informatio
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.9.5 |
-| <a name="requirement_google"></a> [google](#requirement\_google) | >=6.1.0 |
+| <a name="requirement_google"></a> [google](#requirement\_google) | 5.0 |
 
 ## Providers
 
