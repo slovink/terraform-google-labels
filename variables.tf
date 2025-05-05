@@ -4,11 +4,14 @@ variable "name" {
   description = "Name  (e.g. `app` or `cluster`)."
 }
 
+
 variable "environment" {
   type        = string
   default     = ""
   description = "Environment (e.g. `prod`, `dev`, `staging`)."
 }
+
+
 
 variable "repository" {
   type        = string
